@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var REQUEST_CODE = 4844
 
     fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
-        ContextCompat.checkSelfPermission(baseContext, it) ==
+        return ContextCompat.checkSelfPermission(baseContext, it) ==
                 PackageManager.PERMISSION_GRANTED
     }
 
