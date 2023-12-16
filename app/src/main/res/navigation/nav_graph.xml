@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/cameraXPreviewFragment"
+        android:name="com.example.l6_andro_cw.CameraXPreviewFragment"
+        android:label="fragment_camera_x_preview"
+        tools:layout="@layout/fragment_camera_x_preview" />
+    <fragment
+        android:id="@+id/cameraXTakePhotoFragment"
+        android:name="com.example.l6_andro_cw.CameraXTakePhotoFragment"
+        android:label="fragment_camera_x_take_photo"
+        tools:layout="@layout/fragment_camera_x_take_photo" />
+    <fragment
+        android:id="@+id/photoListFragment"
+        android:name="com.example.l6_andro_cw.PhotoListFragment"
+        android:label="fragment_photo_list"
+        tools:layout="@layout/fragment_photo_list" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.l6_andro_cw.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/takePhotoFragment"
+        android:name="com.example.l6_andro_cw.TakePhotoFragment"
+        android:label="fragment_take_photo"
+        tools:layout="@layout/fragment_take_photo" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.l6_andro_cw.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
